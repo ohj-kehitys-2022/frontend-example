@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="myscripts.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Books</h1>
+    <hr>
+    <h2>Login</h2>
+    <label for="uname">USERNAME</label><br>
+    <input type="text" id="uname"> <br>
+    <label for="pass">PASSWORD</label> <br>
+    <input type="text" id="pass"> <br>
+    <button onclick="login()">LOGIN</button>
+    <button onclick="logout()">LOGOUT</button>
+    <button id="myBtn" onclick="myBorrows()" hidden="true">Omat lainat</button>
+    <button id="myBtnData" onclick="myData()" hidden="true">Omat tiedot</button>
+    <p id="my_borrows"></p>
+    <label id="message"></label>
+    <hr>
+    <h2>All books</h2>
+    <p>
+      If you want to see the books click below button <br>
+      <button type="button" name="button" onclick="allBooks()">Show books</button>
+    </p>
+    <div id="allbooks"></div>
+    <h2>Add book</h2>
+    <p>
+        <label for="addname">Bookname</label> <br>
+        <input type="text" id="addname"> <br>
+        <label for="addauthor">Author</label> <br>
+        <input type="text" id="addauthor"> <br>
+        <label for="addisbn">ISBN</label> <br>
+        <input type="text" id="addisbn"> <br>
+        <button onclick="addBook()">Add</button> <br>
+        <label for="" id="message"></label>
+    </p>
+</body>
+</html>
